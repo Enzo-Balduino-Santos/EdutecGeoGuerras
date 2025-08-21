@@ -3,4 +3,28 @@
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
+  background-color: #0C0F0F;
+  color: #ffffff;
 }
+
+
+  .rodape {
+  background-color: #141A19;
+  padding: 34.5rem;
+  .linksn{
+    text-align: left;
+  }
+
+  .linksi{
+    text-align: right;
+  }
+  
+  }
+
+  :root {
+    font-size: 62.5%;
+  }
+
+  body {
+    font-size: 1.6rem;
+  }
