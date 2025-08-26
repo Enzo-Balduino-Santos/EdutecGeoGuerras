@@ -1,30 +1,150 @@
-*{
+:root {
+  font-size: 62.5%;
+}
+
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-  background-color: #0C0F0F;
+
   color: #ffffff;
 }
 
+body {
+  font-size: 1.6rem;
+  background-color: #0C0F0F;
+}
 
-  .rodape {
-  background-color: #141A19;
-  padding: 34.5rem;
-  .linksn{
-    text-align: left;
-  }
 
-  .linksi{
-    text-align: right;
-  }
-  
-  }
 
-  :root {
-    font-size: 62.5%;
-  }
+/* Rodapé */
 
-  body {
-    font-size: 1.6rem;
-  }
+footer {
+  background-color: #0e1312; 
+  color: #ccc; 
+  padding: 4rem 2rem;
+  font-family: Arial, sans-serif;
+}
+
+footer .container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 6rem;
+  padding: 0 4rem; 
+}
+
+.footer-col {
+  flex: 1;
+  min-width: 25rem;
+  padding-right: 2rem;
+}
+
+.footer-col img.logo {
+  width: 8rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-col h3 {
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.footer-col p {
+  font-size: 1.4rem;
+  line-height: 1.6;
+  color: #a0a0a0;
+  margin-top: 1rem;
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  margin-bottom: 0.8rem;
+}
+
+.footer-col ul li a {
+  text-decoration: none;
+  color: #a0a0a0;
+  transition: color 0.2s ease-in;
+}
+
+.footer-col ul li a:hover {
+  color: white;
+}
+
+.footer-bottom {
+  border-top: 0.1rem solid #2a2a2a;
+  margin-top: 3rem;
+}
+
+
+
+
+
+
+
+
+
+/* HEADER */
+
+header {
+  width: 100%;
+  position: absolute; 
+  top: 0;
+  left: 0;
+  padding: 2rem 4rem;
+  background: transparent;
+}
+
+.header-container {
+  max-width: 120rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+.logo img {
+  width: 6rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 4rem; 
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white; 
+  font-size: 1.4rem;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #aaa; 
+}
+
+
+
+
+
+
+
+
+
+
+
+

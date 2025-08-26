@@ -1,48 +1,63 @@
-  <!DOCTYPE html>
-  <html lang="pt-BR">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="global.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>GeoGuerras</title>
-  </head>
-  <body>
-    <header>
-      <img src="./Icones/icone-geoguerra.svg" alt="Logo do Site">
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-      <p>Conflitos</p>
-      <p>Estudos</p>
-      <p>Jogo<p>
-    </header>
-    <section class="cabecalho">     
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="global.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>GeoGuerras</title>
+</head>
+
+<body>
+  <header>
+    <div class="header-container">
+      <div class="logo">
+        <img src="././Icones/icone-geoguerra.svg" alt="GeoGuerra">
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#">Conflitos</a></li>
+          <li><a href="#">Estudos</a></li>
+          <li><a href="#">Jogo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="cabecalho">
       <img src="./Imagens.svg/home/cabeçalho.svg" alt="">
 
       <h1>OBJETIVO</h1>
-      <h3>Nosso site analisa os principais conflitos armados e tensões geopolíticas ao redor do mundo, e é essencial para compreender o cenário internacional atual.</h3>
+      <h3>Nosso site analisa os principais conflitos armados e tensões geopolíticas ao redor do mundo, e é essencial
+        para compreender o cenário internacional atual.</h3>
     </section>
 
     <section class="conflitos">
       <h1>CONFLITOS</h1>
-      <p>Há muitos conflitos conhecidos ao redor do mundo, como Rússia e Ucrânia, mas também há muitas guerras que acontecem sem a devida atenção mundial. Devido a isso, separamos os conflitos em dois tipos:</p>
+      <p>Há muitos conflitos conhecidos ao redor do mundo, como Rússia e Ucrânia, mas também há muitas guerras que
+        acontecem sem a devida atenção mundial. Devido a isso, separamos os conflitos em dois tipos:</p>
 
-      <section class="regionais">
+      <div class="regionais">
         <h2>CONFLITOS REGIONAIS</h2>
         <img src="./Imagens.svg/home/conflitos-regionais.svg" alt="Soldado segurando um lança-foguetes">
-      </section>
+      </div>
 
-      <section class="globais">
+      <div class="globais">
         <h2>CONFLITOS GLOBAIS</h2>
-        <img src="./Imagens.svg/home/conflitos-globais.svg" alt="Dois soldados, um está segurando um rifle e outro com um sinalizador aceso">
-      </section>
+        <img src="./Imagens.svg/home/conflitos-globais.svg"
+          alt="Dois soldados, um está segurando um rifle e outro com um sinalizador aceso">
+      </div>
     </section>
 
     <section class="impactoconflitos">
       <h2>Impacto dos Conflitos Contemporâneos</h2>
 
-      <section class="informacao">
+      <div class="informacao">
         <strong>2B+</strong>
         <p>Pessoas Afetadas</p>
 
@@ -54,30 +69,43 @@
 
         <strong>$15T</strong>
         <p>Impacto Econômico Global</p>
-      </section>
+      </div>
     </section>
+  </main>
 
-    <footer class="rodape">
-      <section class="sobre">
-        <img src="./Icones/icone-geoguerra.svg" alt="Logo do site">
-        <p>Plataforma dedicada a fornecer análises objetivas e
-          informações precisas sobre os conflitos que moldam nosso
-          mundo contemporâneo.</p>
-      </section>
+  <footer>
+    <div class="container">
 
-      <section class="linksn">
-        <p>Navegação</p>
-        <p>Ínicio</p>
-        <p>Conflitos Globais</p>
-        <p>Conflitos Regionais</p>
-      </section>
+      <div class="footer-col">
+        <img src="././Icones/icone-geoguerra.svg" alt="">
+        <p>
+          Plataforma dedicada a fornecer análises objetivas e informações precisas
+          sobre os conflitos que moldam nosso mundo contemporâneo.
+        </p>
+      </div>
 
-      <section class="linksi">
-        <p>Informações</p>
-        <p>Estudos</p>
-        <p>Sobre nós</p>
-        <p>Sobre o GeoGuerra</p>
-      </section>
-    </footer>
-  </body>
-  </html>
+      <div class="footer-col">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#">Início</a></li>
+          <li><a href="#">Conflitos Globais</a></li>
+          <li><a href="#">Conflitos Regionais</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Informações</h3>
+        <ul>
+          <li><a href="#">Estudos</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Sobre o GeoGuerra</a></li>
+        </ul>
+      </div>
+
+    </div>
+    <div class="footer-bottom"></div>
+  </footer>
+
+</body>
+
+</html>

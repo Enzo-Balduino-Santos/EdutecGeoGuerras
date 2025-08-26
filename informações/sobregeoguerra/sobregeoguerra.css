@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #0a0a0a;
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.sobreguerra {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+              url('https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+
+.sobreguerra img {
+  display: none; 
+}
+
+.sobreguerra h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.sobreguerra p {
+  max-width: 800px;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+.NossosValores {
+  text-align: center;
+  padding: 4rem 2rem 2rem;
+  background-color: #111111;
+}
+
+.NossosValores h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  letter-spacing: 1px;
+}
+
+.NossosValores ~ div {
+  background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+  padding: 2.5rem;
+  border-radius: 10px;
+  text-align: center;
+  border: 1px solid #333;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin: 2rem auto;
+  max-width: 350px;
+}
+
+.NossosValores ~ div:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.NossosValores ~ div img {
+  width: 60px;
+  height: 60px;
+  margin-bottom: 1.5rem;
+  filter: brightness(1.2);
+}
+
+.NossosValores ~ div h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+  font-weight: 600;
+}
+
+.NossosValores ~ div p {
+  font-size: 1rem;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+.contact-section,
+form {
+  background-color: #1a1a1a;
+  padding: 3rem;
+  border-radius: 10px;
+  border: 1px solid #333;
+  max-width: 1000px;
+  margin: 3rem auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.contact-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+}
+
+form > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.form-right {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+input, textarea {
+  padding: 1rem;
+  border: 1px solid #444;
+  border-radius: 5px;
+  background-color: #222;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border-color: #666;
+  background-color: #2a2a2a;
+}
+
+textarea {
+  min-height: 150px;
+  resize: vertical;
+  font-family: inherit;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #888;
+}
+
+footer {
+  background-color: #000000;
+  padding: 3rem 2rem 2rem;
+  border-top: 1px solid #333;
+}
+
+footer > div:first-child {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+footer > div:first-child img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1rem;
+}
+
+footer > div:first-child h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+footer > div:first-child p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #cccccc;
+  line-height: 1.6;
+}
+
+footer > div:nth-child(2),
+footer > div:nth-child(3) {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+footer h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 0.5rem;
+}
+
+footer a {
+  color: #cccccc;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+@media (max-width: 768px) {
+  .sobreguerra h1 {
+      font-size: 2.5rem;
+  }
+  
+  .sobreguerra p {
+      font-size: 1rem;
+  }
+  
+  .NossosValores h2 {
+      font-size: 2rem;
+  }
+  
+  form {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 2rem;
+  }
+  
+  .NossosValores ~ div {
+      max-width: 100%;
+      padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .sobreguerra {
+      padding: 1rem;
+  }
+  
+  .sobreguerra h1 {
+      font-size: 2rem;
+  }
+  
+  .NossosValores {
+      padding: 2rem 1rem;
+  }
+  
+  form {
+      padding: 1.5rem;
+  }
+  
+  footer {
+      padding: 2rem 1rem;
+  }
+}
